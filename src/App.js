@@ -4,6 +4,13 @@ import "./App.css";
 //imported axios and Posts(component needed to be connected to the main page, app)
 import axios from "axios"
 import Posts from "./Posts"
+import { Container } from 'reactstrap';
+
+
+//Styling 
+
+
+
 
 
 // console.log(useState)
@@ -28,12 +35,12 @@ function App() {
   console.log(post)
   //return with rending of the Post Component
   return (
-    <div className="App">
+    <Container>
       
       <p>
        <Posts post={post}/>
       </p>
-    </div>
+    </Container>
   );
 }
 

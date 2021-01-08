@@ -4,11 +4,13 @@ import "./App.css";
 //imported axios and Posts(component needed to be connected to the main page, app)
 import axios from "axios"
 import Posts from "./Posts"
-import { Container } from 'reactstrap';
+
 
 
 //Styling 
-
+// const AppBackground = styled.section`
+//   background-image: url/
+// `
 
 
 
@@ -35,12 +37,12 @@ function App() {
   console.log(post)
   //return with rending of the Post Component
   return (
-    <Container>
+    <div>
       
       <p>
        <Posts post={post}/>
       </p>
-    </Container>
+    </div>
   );
 }
 
